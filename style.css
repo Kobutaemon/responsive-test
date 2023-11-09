@@ -1,96 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
-  font-family: 'Noto Sans JP', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  background: #4169E1;
-  color: white;
+    display: flex;
+    justify-content: space-between;
+    background: #4169E1;
+    color: white;
 }
 
 .logo {
-  display: flex;
+    display: flex;
 }
 
 .logo i {
-  padding: 15px;
-  font-size: 25px;
-  cursor: pointer;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .logo h1 {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .menu {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;
-  padding: 15px;
-  transition: all 0.3s;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    padding: 15px;
+    transition: all 0.3s;
 }
 
 .menu a {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .menu i {
-  font-size: 20px;
-  display: none;
-  cursor: pointer;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
 }
 
 #hamberger {
-  display: none;
-  height: 90%;
-  background: rgba(65, 105, 225, 0.8);
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  transition: all 0.6s;
-  position: fixed;
-  right: 0;
-  padding: 0 70px;
+    display: none;
+    height: 90%;
+    background: rgba(65, 105, 225, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition: all 0.6s;
+    position: fixed;
+    right: 0;
+    padding: 0 70px;
 }
 
 .active {
-  right: 50;
-  background: red;
+    right: 50;
+    background: red;
 }
 
 #hamberger a {
-  margin: 50px 0;
-  color: white;
-  cursor: pointer;
+    margin: 50px 0;
+    color: white;
+    cursor: pointer;
 }
 
 
 @media screen and (max-width:480px) {
-  .menu {
-    width: 10%;
-    justify-content: end;
-  }
-  
-  .menu a{
-    display: none;
-  }
-  
-  .menu i {
-    color: white;
-    display: block;
-  }
-  
-  #hamberger {
-    display: flex;
-  }
+    .menu {
+        width: 10%;
+        justify-content: end;
+    }
+    
+    .menu a{
+        display: none;
+    }
+    
+    .menu i {
+        color: white;
+        display: block;
+    }
+    
+    #hamberger {
+        display: flex;
+    }
 }
