@@ -7,9 +7,7 @@
 
 html, body {
     width: 100%;
-    height: 100%;
     font-family: 'Noto Sans JP', sans-serif;
-    overflow: hidden;
 }
 
 .footer {
@@ -18,7 +16,7 @@ html, body {
     align-items: center;
     background: #4169E1;
     color: white;
-    height: 10%;
+    height: 10vh;
 }
 
 .logo {
@@ -36,15 +34,7 @@ html, body {
 }
 
 .menu {
-    display: flex;
     width: 50%;
-    justify-content: space-around;
-    padding: 15px;
-    transition: all 0.3s;
-}
-
-.menu a {
-    cursor: pointer;
 }
 
 .menu i {
@@ -53,40 +43,47 @@ html, body {
     cursor: pointer;
 }
 
-.hamberger {
-    display: none;
-    height: 90%;
-    background: rgba(65, 105, 225, 0.7);
-    position: absolute;
-    right: 0;
-    padding: 0 50px;
+.text {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px;
+    transition: all 0.3s;
 }
 
-.hamberger-menu {
-    display: flex;
-    color: white;
-    height: 50%;
-    flex-direction: column;
-    justify-content: space-around;
+.text a {
+    cursor: pointer;
 }
 
 .active {
-    display: block;
+    transform: translateX(0%);
 }
 
 
 @media screen and (max-width:480px) {
-    .menu {
-        width: 10%;
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu i{
+        display: flex;
         justify-content: end;
+        margin-right: 25px;
     }
-    
-    .menu a{
-        display: none;
+
+    .text {
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        top: 10vh;
+        background: #4169E1;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
     }
-    
-    .menu i {
-        color: white;
-        display: block;
+
+    .text a {
+        opacity: 0;
     }
 }

@@ -1,6 +1,7 @@
 const hambergerIcon = document.querySelector(".fa-bars");
-const hambergerActive = document.querySelector(".hamberger");
+const text = document.querySelector(".text");
+
 
 hambergerIcon.addEventListener("click", function() {
-    hambergerActive.classList.toggle("active");
+    text.classList.toggle("active");
 })
