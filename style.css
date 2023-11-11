@@ -82,8 +82,4 @@ html, body {
         width: 40%;
         transform: translateX(100%);
     }
-
-    .text a {
-        opacity: 0;
-    }
 }
